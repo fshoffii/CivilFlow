@@ -1,6 +1,6 @@
 import 'status_layanan.dart';
 
-/// Sebagai cetak biru untuk seluruh warga/pemohon yang datang ke mall pelayanan.
+//Sebagai cetak biru untuk seluruh warga/pemohon yang datang ke mall pelayanan.
 abstract class Pemohon {
   //Encapsulation Atribut diisolasi menggunakan private (_)
   String _nik; // Diisolasi agar tidak bisa dimanipulasi ilegal dari luar class
@@ -9,11 +9,11 @@ abstract class Pemohon {
 
   Pemohon(this._nik, this._namaLengkap) : status = StatusLayanan.MENUNGGU;
 
-  // Getter resmi untuk mengakses data terenkapsulasi
+  //Getter resmi untuk mengakses data terenkapsulasi
   String get nik => _nik;
   String get namaLengkap => _namaLengkap;
 
-  /// Polimorfisme: Method abstrak untuk menentukan jalur loket layanan spesifik
+  //Polimorfisme: Method abstrak untuk menentukan jalur loket layanan spesifik
   String dapatkanJalurLayanan();
 
   void cetakKarcis() {

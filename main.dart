@@ -12,6 +12,7 @@ void main() {
     print('3. Lacak Pemohon via NIK');
     print('4. Tampilkan Monitor Antrean');
     print('5. Tampilkan Riwayat Pelayanan');
+    print('6. Cancel Panggilan Terakhir');
     print('0. Keluar');
     print('================================');
 
@@ -61,6 +62,10 @@ void main() {
 
       case '5':
         sistem.tampilkanRiwayatPelayanan();
+        break;
+
+      case '6': 
+        sistem.undoPanggilanLoket();
         break;
 
       case '0':
